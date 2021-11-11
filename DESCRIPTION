@@ -1,7 +1,7 @@
 Package: iotc.core.gis.wkt
 Type: Package
 Title: IOTC core WKT and SF (simple feature) helpers and constants
-Version: 0.2.0
+Version: 0.2.1
 Author: Fabio Fiorellato <fabio.fiorellato@fao.org>
 Maintainer: Fabio Fiorellato <fabio.fiorellato@fao.org>
 Description: Provides convenience methods to retrieve WKT data and produce SF out of these for the areas currently in the IOTC Statistics DB fishing grounds table, as well as constants to access the most frequently used areas, including:
