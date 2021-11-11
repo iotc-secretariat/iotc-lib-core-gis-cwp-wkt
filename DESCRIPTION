@@ -19,6 +19,6 @@ Encoding: UTF-8
 LazyData: true
 Depends: 
     sf,
-    iotc.core.utils.misc,
-    iotc.core.db.data
+    iotc.core.utils.misc (>= 0.2.0),
+    iotc.core.db.data (>= 0.2.1)
 RoxygenNote: 7.1.1
