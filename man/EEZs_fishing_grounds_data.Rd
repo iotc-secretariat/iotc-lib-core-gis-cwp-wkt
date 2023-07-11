@@ -2,16 +2,13 @@
 % Please edit documentation in R/iotc_core_gis_wkt_areas.R
 \name{EEZs_fishing_grounds_data}
 \alias{EEZs_fishing_grounds_data}
-\title{Connects to an instance of the IOTCStatistics DB and returns all data for fishing grounds corresponding to individual EEZs}
+\title{Returns all data for fishing grounds corresponding to individual EEZs}
 \usage{
-EEZs_fishing_grounds_data(connection = DB_IOTCSTATISTICS())
-}
-\arguments{
-\item{connection}{An active connection to the IOTCStatistics DB (defaults to the instance on 'IOTCS09')}
+EEZs_fishing_grounds_data()
 }
 \value{
 a data frame containing all data for the fishing grounds corresponding to individual EEZs
 }
 \description{
-Connects to an instance of the IOTCStatistics DB and returns all data for fishing grounds corresponding to individual EEZs
+Returns all data for fishing grounds corresponding to individual EEZs
 }

@@ -5,14 +5,14 @@
 \title{Converts all rows of a dataframe produced by the \code{fishing_grounds_data}, \code{fishing_grounds_data_by_pattern} and \code{EEZs_fishing_grounds_data}
 to simple fatures' instances, using the \code{WKT} column to define the spatial boundaries of the fishing ground}
 \usage{
-WKT_to_simple_feature(fishing_ground_data, crs = "EPSG:4326", simplify = FALSE)
+WKT_to_simple_feature(fishing_grounds, crs = "EPSG:4326", simplify = FALSE)
 }
 \arguments{
-\item{fishing_ground_data}{A data frame containing all information for one or more fishing grounds}
-
 \item{crs}{a coordinate reference system (defaults to EPSG:4326)}
 
 \item{simplify}{If TRUE, the resulting spatial boundary will be simplified, otherwise it's returned as originally provided}
+
+\item{fishing_ground_data}{A data frame containing all information for one or more fishing grounds}
 }
 \value{
 a data frame containing all data for the fishing grounds corresponding to individual EEZs

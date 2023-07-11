@@ -2,23 +2,18 @@
 % Please edit documentation in R/iotc_core_gis_wkt_areas.R
 \name{fishing_grounds_data}
 \alias{fishing_grounds_data}
-\title{Connects to an instance of the IOTCStatistics DB and returns all data (CODE, NAME_EN, NAME_FR, OCEAN_AREA_SURFACE_KM2, CENTER_LAT, CENTER_LON, WKT) for the a given set of fishing ground codes}
+\title{Returns all data (CODE, NAME_EN, NAME_FR, OCEAN_AREA_SURFACE_KM2, CENTER_LAT, CENTER_LON, WKT) for the a given set of fishing ground codes}
 \usage{
-fishing_grounds_data(
-  fishing_ground_codes = c("IREASIO", "IRWESIO"),
-  connection = DB_IOTCSTATISTICS()
-)
+fishing_grounds_data(fishing_ground_codes = c("IREASIO", "IRWESIO"))
 }
 \arguments{
 \item{fishing_ground_codes}{The list of fishing ground codes to consider (defaults to the codes for WIO and EIO)}
-
-\item{connection}{An active connection to the IOTCStatistics DB (defaults to the instance on 'IOTCS09')}
 }
 \value{
 a data frame containing all data fields for the unique fishing grounds with the provided \code{fishing_ground_codes}
 }
 \description{
-Connects to an instance of the IOTCStatistics DB and returns all data (CODE, NAME_EN, NAME_FR, OCEAN_AREA_SURFACE_KM2, CENTER_LAT, CENTER_LON, WKT) for the a given set of fishing ground codes
+Returns all data (CODE, NAME_EN, NAME_FR, OCEAN_AREA_SURFACE_KM2, CENTER_LAT, CENTER_LON, WKT) for the a given set of fishing ground codes
 }
 \examples{
 fishing_grounds_data(c("IRFAO51", "IRFAO57"))
