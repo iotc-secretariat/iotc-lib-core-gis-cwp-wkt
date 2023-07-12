@@ -4,7 +4,12 @@
 \alias{sf_by_code}
 \title{Produces the spatial features for the provided fishing ground codes}
 \usage{
-sf_by_code(fishing_ground_codes, crs = "EPSG:4326", simplify = FALSE)
+sf_by_code(
+  fishing_ground_codes,
+  crs = "EPSG:4326",
+  simplify = FALSE,
+  connection = DB_IOTCSTATISTICS()
+)
 }
 \arguments{
 \item{fishing_ground_codes}{A set of fishing ground codes}

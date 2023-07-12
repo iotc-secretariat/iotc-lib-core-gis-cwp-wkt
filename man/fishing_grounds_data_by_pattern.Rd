@@ -2,20 +2,22 @@
 % Please edit documentation in R/iotc_core_gis_wkt_areas.R
 \name{fishing_grounds_data_by_pattern}
 \alias{fishing_grounds_data_by_pattern}
-\title{Returns all data (CODE, NAME_EN, NAME_FR, OCEAN_AREA_SURFACE_KM2, CENTER_LAT, CENTER_LON, WKT) for fishing ground codes matching a provided pattern}
+\title{Connects to an instance of the IOTCStatistics DB and returns all data (CODE, NAME_EN, NAME_FR, OCEAN_AREA_SURFACE_KM2, CENTER_LAT, CENTER_LON, WKT) for fishing ground codes matching a provided pattern}
 \usage{
-fishing_grounds_data_by_pattern(pattern)
+fishing_grounds_data_by_pattern(pattern, connection = DB_IOTCSTATISTICS())
 }
 \arguments{
 \item{pattern}{The pattern (as expected by the LIKE operator) of fishing ground codes to consider (defaults to the codes for WIO and EIO)}
+
+\item{connection}{An active connection to the IOTCStatistics DB (defaults to the instance on 'IOTCS09')}
 }
 \value{
 a data frame containing all data for the fishing grounds with a fishing ground code matching the provided \code{pattern}
 }
 \description{
-Returns all data (CODE, NAME_EN, NAME_FR, OCEAN_AREA_SURFACE_KM2, CENTER_LAT, CENTER_LON, WKT) for fishing ground codes matching a provided pattern
+Connects to an instance of the IOTCStatistics DB and returns all data (CODE, NAME_EN, NAME_FR, OCEAN_AREA_SURFACE_KM2, CENTER_LAT, CENTER_LON, WKT) for fishing ground codes matching a provided pattern
 }
 \examples{
-fishing_grounds_data_by_pattern("^5")
-fishing_grounds_data("SYC")
+fishing_grounds_data(c("IRFAO51", "IRFAO57"))
+fishing_grounds_data("IRALLHS")
 }
