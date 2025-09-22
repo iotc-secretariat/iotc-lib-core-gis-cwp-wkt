@@ -2,13 +2,13 @@ Package: iotc.core.gis.wkt.standalone
 Type: Package
 Title: IOTC core WKT and SF (simple feature) helpers and constants
 Version: 0.2.1
-Author: Fabio Fiorellato <fabio.fiorellato@fao.org>
-Maintainer: Fabio Fiorellato <fabio.fiorellato@fao.org>
-Description: Provides convenience methods to retrieve WKT data and produce SF out of these for the areas currently in the IOTC Statistics DB fishing grounds table, as well as constants to access the most frequently used areas. Standalone version that doesn't require connecting to IOTC databases to work.
+Author: IOTC Secretariat <IOTC-Statistics@fao.org>
+Maintainer: IOTC Secretariat <IOTC-Statistics@fao.org>
+Description: Provides convenience methods to retrieve WKT data and produce SF out of these for the areas currently in the IOTC Statistics database fishing grounds table, as well as constants to access the most frequently used areas. Standalone version that doesn't require connecting to IOTC databases to work.
 License: Private
 Encoding: UTF-8
 LazyData: true
 Depends: 
     iotc.core.utils.misc (>= 0.2.0),
-    R (>= 2.10)
+    R (>= 3.5)
 RoxygenNote: 7.2.3
