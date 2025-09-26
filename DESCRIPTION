@@ -9,7 +9,7 @@ License: Private
 Encoding: UTF-8
 LazyData: true
 Depends:
-  R (>= 3.5)?
+  R (>= 3.5),
   sf,
   iotc.core.utils.misc (>= 0.2.0)
 RoxygenNote: 7.3.2
