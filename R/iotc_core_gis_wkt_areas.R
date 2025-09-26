@@ -45,18 +45,18 @@ EEZs_fishing_grounds_data = function() {
 #' @return a data frame containing all data for the fishing grounds corresponding to individual EEZs
 #' @export
 WKT_to_simple_feature = function(fishing_grounds, crs = "EPSG:4326", simplify = FALSE) {
-  features = st_as_sf(fishing_grounds, wkt = "WKT")
+  features = sf::st_as_sf(fishing_grounds, wkt = "WKT")
 
-  st_crs(features) = crs
+  sf::st_crs(features) = crs
 
   tryCatch({
-      features = st_make_valid(features)
+      features = sf::st_make_valid(features)
     }, error = function(e) {
       warning(paste0("Unable to apply makeValid to EPSG data for fishing ground ", code, ": ", e))
     }
   )
 
-  if(simplify) { features = st_simplify(features, preserveTopology = FALSE, dTolerance = 50) }
+  if(simplify) { features = sf::st_simplify(features, preserveTopology = FALSE, dTolerance = 50) }
 
   return(features)
 }
