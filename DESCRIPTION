@@ -11,5 +11,6 @@ LazyData: true
 Depends:
   R (>= 3.5),
   sf,
+  data.table,
   iotc.core.utils.misc (>= 0.2.0)
 RoxygenNote: 7.3.2
